@@ -57,6 +57,14 @@
       transform: scale(0.5);
       pointer-events: none;
     }
+    .cell .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      cursor: pointer;
+    }
     .label {
       text-align: center;
       font-size: 0.85rem;
@@ -72,30 +80,34 @@
     <p>아래에서 다양한 p5.js 작품을 감상하세요.</p>
   </header>
   <main id="projects">
-    <a class="card" href="sample1/index.html" target="_blank">
+    <div class="card">
       <div class="cell">
         <iframe src="sample1/index.html"></iframe>
+        <a class="overlay" href="sample1/index.html" target="_blank"></a>
       </div>
       <p class="label">과제 1 · 추상화 그리기</p>
-    </a>
-    <a class="card" href="sample4/index.html" target="_blank">
+    </div>
+    <div class="card">
       <div class="cell">
         <iframe src="sample4/index.html"></iframe>
+        <a class="overlay" href="sample4/index.html" target="_blank"></a>
       </div>
       <p class="label">과제 4 · 움직이는 추상화</p>
-    </a>
-    <a class="card" href="sample2/index.html" target="_blank">
+    </div>
+    <div class="card">
       <div class="cell">
         <iframe src="sample2/index.html"></iframe>
+        <a class="overlay" href="sample2/index.html" target="_blank"></a>
       </div>
       <p class="label">과제 2 · 캐릭터 그리기</p>
-    </a>
-    <a class="card" href="sample3/index.html" target="_blank">
+    </div>
+    <div class="card">
       <div class="cell">
         <iframe src="sample3/index.html"></iframe>
+        <a class="overlay" href="sample3/index.html" target="_blank"></a>
       </div>
       <p class="label">과제 3 · 움직이는 캐릭터</p>
-    </a>
+    </div>
   </main>
   <footer>made with p5.js</footer>
 </body>
